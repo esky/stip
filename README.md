@@ -1,10 +1,13 @@
 stip
 ====
+demo参见
+  http://jsbin.com/dafobi/3/edit?html,css,js,output
 
 基于jQuery的tip组件
-/*
+
  * 复杂tip组件
- * 2013-07-24 esky
+ * 2013-07-24 郑弋天
+ * 适用于tip内容复杂需动态渲染的情况，简单tip请使用jtip
  *
  *说明：
  * 	$(selector).stip( ops ); //直接绑定
@@ -28,8 +31,9 @@ stip
  * 	showFn : 显示且定位后的回调函数
  * 	hideFn : 隐藏时的回调函数
  * 	initFn : 初始化回调函数，只执行一次
- * 	width : 固定宽度
- * 	maxWidth : 最大宽度, 默认auto
+ * 	width : 固定宽度 默认auto
+ * 	minWidth : 最新宽度
+ * 	maxWidth : 最大宽度
  * 	ox : x轴偏移量
  * 	oy : y轴偏移量
  *	timeout : hover延迟时间
@@ -37,4 +41,4 @@ stip
  *	更新历史
  *		2013-08-24：增加适应屏幕功能，防止tip超出屏幕
  *		2014-05-08：增加timeout配置
- */
+ *		2015-04-10：完善loc=b/r 的模板样式
