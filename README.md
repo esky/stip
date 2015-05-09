@@ -1,13 +1,13 @@
 stip
 ====
 demo参见
-  http://jsbin.com/dafobi/3/edit?html,css,js,output
+  http://jsbin.com/yosogehano/1/edit?css,js,output
 
 基于jQuery的tip组件
 
+/*
  * 复杂tip组件
  * 2013-07-24 郑弋天
- * 适用于tip内容复杂需动态渲染的情况，简单tip请使用jtip
  *
  *说明：
  * 	$(selector).stip( ops ); //直接绑定
