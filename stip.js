@@ -115,8 +115,8 @@
  			var com = this;
  			this.conf.enPos && this.$el.appendTo(document.body);
  			this.$el.bind({
- 				mouseenter : function(){ com.$curTar[0].timer && window.clearTimeout(com.$curTar[0].timer); },
- 				mouseleave : function(){ com.$curTar[0].timer = window.setTimeout(function(){com.hide()}, com.conf.timeout); }
+ 				mouseenter : function(){ com.$curTar && com.$curTar[0].timer && window.clearTimeout(com.$curTar[0].timer); },
+ 				mouseleave : function(){ com.$curTar && ( com.$curTar[0].timer = window.setTimeout(function(){com.hide()}, com.conf.timeout) ); }
  			});
  		},
  		//鼠标移上
